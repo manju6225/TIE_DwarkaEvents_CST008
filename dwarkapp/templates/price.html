@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block title %}Event Management Service - Price{% endblock %}
+
+{% block content %}
+<section class="price" id="price">
+    <br><br>
+    <h1 class="heading">Our <span>Price</span></h1>
+    <div class="box-container">
+        <!-- Price packages and details go here -->
+        <div class="box">
+            <h3 class="title">for birthdays</h3>
+            <h3 class="amount">Rs.10000</h3>
+            <ul>
+                <li><i class="fas fa-check"></i>full services</li>
+                <li><i class="fas fa-check"></i>decorations</li>
+                <li><i class="fas fa-check"></i>music and photos</li>
+                <li><i class="fas fa-check"></i>food and drinks</li>
+                <li><i class="fas fa-check"></i>inviation card</li>
+            </ul>
+            <a href="{% url 'checkout' %}" class="btn">check out</a>
+        </div>
+
+        <div class="box">
+            <h3 class="title">for weddings</h3>
+            <h3 class="amount">Rs.500000</h3>
+            <ul>
+                <li><i class="fas fa-check"></i>full services</li>
+                <li><i class="fas fa-check"></i>decorations</li>
+                <li><i class="fas fa-check"></i>music and photos</li>
+                <li><i class="fas fa-check"></i>food and drinks</li>
+                <li><i class="fas fa-check"></i>inviation card</li>
+            </ul>
+            <a href="{% url 'checkout' %}" class="btn">check out</a>
+        </div>
+
+        <div class="box">
+            <h3 class="title">for concerts</h3>
+            <h3 class="amount">Rs.25000</h3>
+            <ul>
+                <li><i class="fas fa-check"></i>full services</li>
+                <li><i class="fas fa-check"></i>decorations</li>
+                <li><i class="fas fa-check"></i>music and photos</li>
+                <li><i class="fas fa-check"></i>food and drinks</li>
+                <li><i class="fas fa-check"></i>inviation card</li>
+            </ul>
+            <a href="{% url 'checkout' %}" class="btn">check out</a>
+        </div>
+
+        <div class="box">
+            <h3 class="title">for others</h3>
+            <h3 class="amount">Rs.10000</h3>
+            <ul>
+                <li><i class="fas fa-check"></i>full services</li>
+                <li><i class="fas fa-check"></i>decorations</li>
+                <li><i class="fas fa-check"></i>music and photos</li>
+                <li><i class="fas fa-check"></i>food and drinks</li>
+                <li><i class="fas fa-check"></i>inviation card</li>
+            </ul>
+            <a href="{% url 'checkout' %}" class="btn">check out</a>
+        </div>
+
+    </div>
+</section>
+{% endblock %}
