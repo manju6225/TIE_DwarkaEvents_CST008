@@ -435,6 +435,9 @@ body{
     padding: 1rem 0;
     color: #fff;
 }
+.footer .box-container{
+    background-color: greenyellow;
+}
 
 
 .footer .box-container .box a{
@@ -468,9 +471,7 @@ body{
     color: var(--main-color);
 
 }
-.footer{
-    background-color: greenyellow;
-}
+
 .credit{
     margin-left: 400px;
 }
