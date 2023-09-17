@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<section class="home" id="home">
+    <div class="content">
+        <h3><marquee>It's time to celebrate! The best <span>events</span></marquee></h3>
+        <a href="{% url 'contact' %}" class="btn">Contact Us</a>
+    </div>
+    
+    <div class="swiper-container home-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="static/images/44.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="static/images/11.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="static/images/88.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="static/images/77.jpg" alt=""></div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

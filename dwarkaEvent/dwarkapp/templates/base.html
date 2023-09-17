@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Service Website Design</title>
+
+    Include common CSS -->
+    <!-- <link rel="stylesheet" href="{% static 'style1.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/> -->
+
+    <!--font awesome cdn link-->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+    
+    <!--custom js file link-->
+    <!-- <script src="{% static 'script1.js' %}"></script>
+    <script src="path/to/swiper.min.js"></script> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Service Website Design</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!--custom css file link-->
+    <link rel="stylesheet" href="{% static 'style1.css' %}">
+   
+    
+    <!-- <link rel="stylesheet" href="path/to/swiper.min.css"> -->
+    <!-- <script src="path/to/swiper.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="{% static 'script1.js' %}"></script>
+
+    
+
+</head>
+<body>
+    <link rel="stylesheet" href="{% static 'static/css/style.css' %}">
+    <div>
+ <!-- Header Section -->
+ <header class="header">
+    <!-- Logo and navigation links -->
+    <a href="{% url 'base' %}"  class="logo"><span>D</span>warka<span> E</span>vents</a>
+    <nav class="navbar">
+        <!-- <a href="{% url 'home' %}">home</a> -->
+        <a href="{% url 'service' %}">service</a>
+        <a href="{% url 'about' %}">about</a>
+        <a href="{% url 'gallery' %}">gallery</a>
+        <a href="{% url 'price' %}">price</a>
+        <a href="{% url 'review' %}">review</a>
+        <a href="{% url 'contact' %}">contact</a>
+    </nav>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+</header>
+<section>
+    {% block content %}{% endblock %}
+</section>
+
+
+
+    
+   
+
+</body>
+</html>

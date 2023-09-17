@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{%load static%}
+
+{% block content %}
+<br><br>
+<section class="review" id="review">
+    <h1 class="heading">client's <span> review</span></h1>
+
+    <div class="review-slider swiper-container">
+        <div class="swiper-container">
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="{% static 'images/man1.jpg'%}" alt="">
+                    <div class="user-info">
+                        <h3>Manjunatha</h3>
+                        <span>happy clients</span>
+                    </div>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic reprehenderit eaque minus ullam iusto necessitatibus suscipit ipsa, accusamus voluptatem, tempora ducimus nam optio doloremque quisquam eveniet, enim voluptatum numquam dolor.</p>
+            </div>
+
+            <div class="swiper-slide box">
+               <i class="fas fa-quote-right"></i>
+               <div class="user">
+                   <img src="{% static 'images/man1.jpg'%}" alt="">
+                   <div class="user-info">
+                       <h3>Rajesh</h3>
+                       <span>happy clients</span>
+                   </div>
+               </div>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic reprehenderit eaque minus ullam iusto necessitatibus suscipit ipsa, accusamus voluptatem, tempora ducimus nam optio doloremque quisquam eveniet, enim voluptatum numquam dolor.</p>
+           </div>
+
+           <div class="swiper-slide box">
+               <i class="fas fa-quote-right"></i>
+               <div class="user">
+                   <img src="{% static 'images/man2.jpg'%}" alt="">
+                   <div class="user-info">
+                       <h3>john deo</h3>
+                       <span>happy clients</span>
+                   </div>
+               </div>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic reprehenderit eaque minus ullam iusto necessitatibus suscipit ipsa, accusamus voluptatem, tempora ducimus nam optio doloremque quisquam eveniet, enim voluptatum numquam dolor.</p>
+           </div>
+
+           <div class="swiper-slide box">
+               <i class="fas fa-quote-right"></i>
+               <div class="user">
+                   <img src="{% static 'images/man3.jpg'%}" alt="">
+                   <div class="user-info">
+                       <h3>Nagraj</h3>
+                       <span>happy clients</span>
+                   </div>
+               </div>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic reprehenderit eaque minus ullam iusto necessitatibus suscipit ipsa, accusamus voluptatem, tempora ducimus nam optio doloremque quisquam eveniet, enim voluptatum numquam dolor.</p>
+           </div>
+        </div>
+</section>
+
+{% endblock %}
